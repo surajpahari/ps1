@@ -36,3 +36,124 @@
 2026-01-02 18:45:25 | Sent 3 records
 2026-01-02 18:49:07 | Sent 3 records
 2026-01-02 19:05:35 | Sent 3 records
+2026-01-02 23:29:20 | Sent 3 records
+2026-01-02 23:29:33 | Sent 3 records
+2026-01-02 23:34:19 | Sent 3 records
+2026-01-02 23:34:48 | Sent 3 lines | Response: {
+  "status": true,
+  "message": "Reading stored successfully",
+  "data": {
+    "device": {
+      "id": 1,
+      "organizer_id": 2,
+      "name": "RFID READER 1",
+      "battery": 100,
+      "signal": 100,
+      "status": "ONLINE",
+      "type": "RFID_GATE",
+      "last_sync": null,
+      "is_enabled": 1,
+      "created_at": "2025-11-26T14:45:44Z",
+      "updated_at": "2025-11-26T14:45:44Z"
+    },
+    "deviceConnection": {
+      "id": 5,
+      "event_id": 5,
+      "checkpoint_id": 23,
+      "device_id": 1,
+      "created_at": "2025-12-28T16:23:44Z",
+      "updated_at": "2025-12-28T16:23:44Z"
+    },
+    "readings": {
+      "2649": [
+        "2025-12-31 23:39:44.950",
+        "2025-12-31 23:40:55.938"
+      ]
+    }
+  }
+}
+2026-01-02 23:36:57 | Sent 3 lines | Response: {
+  "readingsByChipCode": [
+    {
+      "checkpoint_id": 23,
+      "device_id": 1,
+      "event_id": 5,
+      "ticket_id": 12,
+      "participant_id": 147,
+      "chip_code": 2649,
+      "time": "2025-12-31 17:54:44.950000",
+      "created_at": "2026-01-02T17:51:57.82738Z",
+      "updated_at": "2026-01-02T17:51:57.82738Z"
+    },
+    {
+      "checkpoint_id": 23,
+      "device_id": 1,
+      "event_id": 5,
+      "ticket_id": 12,
+      "participant_id": 147,
+      "chip_code": 2649,
+      "time": "2025-12-31 17:55:55.938000",
+      "created_at": "2026-01-02T17:51:57.82738Z",
+      "updated_at": "2026-01-02T17:51:57.82738Z"
+    }
+  ]
+}
+2026-01-02 23:37:45 | Sent 3 lines | Response: {
+  "readingsByChipCode": [
+    {
+      "checkpoint_id": 23,
+      "device_id": 1,
+      "event_id": 5,
+      "ticket_id": 12,
+      "participant_id": 147,
+      "chip_code": 2649,
+      "time": "2025-12-31 17:54:44.950000",
+      "created_at": "2026-01-02T17:52:45.356893Z",
+      "updated_at": "2026-01-02T17:52:45.356893Z"
+    },
+    {
+      "checkpoint_id": 23,
+      "device_id": 1,
+      "event_id": 5,
+      "ticket_id": 12,
+      "participant_id": 147,
+      "chip_code": 2649,
+      "time": "2025-12-31 17:55:55.938000",
+      "created_at": "2026-01-02T17:52:45.356893Z",
+      "updated_at": "2026-01-02T17:52:45.356893Z"
+    }
+  ]
+}
+2026-01-02 23:37:59 | Sent 3 lines | Response: {
+  "status": true,
+  "message": "Reading stored successfully",
+  "data": {
+    "device": {
+      "id": 1,
+      "organizer_id": 2,
+      "name": "RFID READER 1",
+      "battery": 100,
+      "signal": 100,
+      "status": "ONLINE",
+      "type": "RFID_GATE",
+      "last_sync": null,
+      "is_enabled": 1,
+      "created_at": "2025-11-26T14:45:44Z",
+      "updated_at": "2025-11-26T14:45:44Z"
+    },
+    "deviceConnection": {
+      "id": 5,
+      "event_id": 5,
+      "checkpoint_id": 23,
+      "device_id": 1,
+      "created_at": "2025-12-28T16:23:44Z",
+      "updated_at": "2025-12-28T16:23:44Z"
+    },
+    "readings": {
+      "2649": [
+        "2025-12-31 23:39:44.950",
+        "2025-12-31 23:40:55.938"
+      ]
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "RaceDir": "~/Documents/",
-  "ApiUrl": "http://racepatro.test/api/v1/devices",
-  "IntervalSeconds": 5,
-  "Prefix": "56"
+  "RaceDir": "C:\\Users\\RTS TIMER 39 - 2\\Desktop\\Raw Timing Files",
+  "ApiUrl": "https://rpatro.zeronetechnology.com.np/api/v1/devices",
+  "IntervalSeconds": 8,
+  "Prefix": "192.168.1.39"
 }

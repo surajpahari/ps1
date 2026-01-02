@@ -4,8 +4,8 @@ param (
   [switch]$upload_fresh
 )
 
-$AppConnectionScript = "$HOME/rfid-test/data/login.ps1"
-$RaceUploadScript = "$HOME/rfid-test/data/connection.ps1"
+$AppConnectionScript =Join-Path $PSScriptRoot "login.ps1"
+$RaceUploadScript = Join-Path $PSScriptRoot "connection.ps1"
 
 
 if ($connect)
@@ -46,4 +46,6 @@ if ($upload_fresh)
     Write-Host "Skipping race upload because login failed." -ForegroundColor Red
   }
 }
+
+
 

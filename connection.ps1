@@ -27,7 +27,7 @@ if ($RaceDir -like "~*")
 $CurrentDate = Get-Date -Format "yyyyMMdd"
 
 # Build racePath: RaceDir + prefix + _ + current date
-# $racePath = Join-Path $RaceDir ("$Prefix" + "_" + "$CurrentDate" + ".txt")
+# $racePath = Join-Path $RaceDir ("$Prefix" + "_" + "$CurrentDate"+".txt")
 
 # Output for testing
 Write-Host "racePath: $racePath"
@@ -35,7 +35,7 @@ Write-Host "ApiUrl: $ApiUrl"
 Write-Host "IntervalSeconds: $IntervalSeconds"
 
 # Build racePath: RaceDir + prefix + _ + current date + .txt
-$racePath = Join-Path $RaceDir ("$Prefix" + "_" + "$CurrentDate" + ".txt")
+$racePath = Join-Path $RaceDir ("$Prefix" + "_" + "$CurrentDate"+".txt")
 
 # Check if racePath exists
 if (-not (Test-Path $racePath))
@@ -115,16 +115,15 @@ while ($true)
 
           try
           {
-            Invoke-RestMethod `
+            $response=Invoke-RestMethod `
               -Uri $ApiUrl `
               -Method POST `
               -Body $payload `
               -ContentType "text/plain" `
               -Headers $headers
-
-            #
-            # $logEntry = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Sent $($lines.Count) lines | Response: $(ConvertTo-Json $response -Depth 5)"
-            $logEntry = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Sent $($lines.Count) records"
+            $logEntry = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Sent $($lines.Count) lines | Response: $(ConvertTo-Json $response -Depth 5)"
+            
+            # $logEntry = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Sent $($lines.Count) lines"
             Write-Host $logEntry -ForegroundColor Green
             Add-Content $LogFile $logEntry
 
@@ -169,4 +168,8 @@ while ($true)
 
   Start-Sleep -Seconds $IntervalSeconds
 }
+
+
+
+
 
