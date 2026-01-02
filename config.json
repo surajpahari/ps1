@@ -1,9 +1,6 @@
 {
-  "FilePath": "$HOME/rfid-test/data/race.txt",
-  "StateFile": "$HOME/rfid-test/data/state.txt",
-  "TokenFile": "$HOME/rfid-test/data/token.txt",
+  "RaceDir": "~/Documents/",
   "ApiUrl": "http://racepatro.test/api/v1/devices",
-  "LogFile": "$HOME/rfid-test/data/log.txt",
-  "ErrorLogFile": "$HOME/rfid-test/data/error.txt",
-  "IntervalSeconds": 5
+  "IntervalSeconds": 5,
+  "Prefix": "56"
 }

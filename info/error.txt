@@ -1,0 +1,43 @@
+2026-01-02 18:23:18 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:23:23 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:23:28 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:23:33 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:23:38 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:23:43 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:23:48 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:23:53 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:23:58 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:03 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:08 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:13 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:18 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:23 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:28 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:33 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:38 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:43 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:48 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:53 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:24:58 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:30:09 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:30:14 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:30:19 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:31:28 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:32:25 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:33:14 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:33:19 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:33:24 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:33:29 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:33:34 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:33:39 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:33:44 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:33:49 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:33:54 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:33:59 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:34:04 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:34:09 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:34:14 | Unexpected ERROR: Cannot bind argument to parameter 'Path' because it is null.
+2026-01-02 18:38:01 | Sent 3 lines | ERROR: 
+{
+  "message": "Unauthorized"
+}

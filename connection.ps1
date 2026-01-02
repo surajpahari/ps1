@@ -1,10 +1,52 @@
-$FilePath = "$HOME/rfid-test/data/race.txt"
-$StateFile = "$HOME/rfid-test/data/state.txt"
-$ApiUrl = "http://racepatro.test/api/v1/devices"
-$TokenFile = "$HOME/rfid-test/data/token.txt"
-$IntervalSeconds = 5
-$LogFile = "$HOME/rfid-test/data/log.txt"
-$ErrorLogFile = "$HOME/rfid-test/data/error.txt"
+#Specify file location
+$TokenFile = Join-Path $PSScriptRoot "token.txt"
+$ErrorLogFile = Join-Path $PSScriptRoot "info/error.txt"
+$LogFile =Join-Path $PSScriptRoot "info/log.txt" 
+$StateFile =Join-Path $PSScriptRoot "info/state.txt" 
+
+
+# Path to config.json
+$configFile = Join-Path $PSScriptRoot "config.json"
+
+# Read JSON file
+$configContent = Get-Content -Raw $configFile | ConvertFrom-Json
+
+# Access values
+$RaceDir = $configContent.RaceDir
+$ApiUrl = $configContent.ApiUrl
+$IntervalSeconds = $configContent.IntervalSeconds
+$Prefix = $configContent.Prefix
+
+# Expand tilde (~) to home directory if used
+if ($RaceDir -like "~*")
+{
+  $RaceDir = $RaceDir -replace "^~", [Environment]::GetFolderPath("UserProfile")
+}
+
+# Current date in yyyyMMdd format
+$CurrentDate = Get-Date -Format "yyyyMMdd"
+
+# Build racePath: RaceDir + prefix + _ + current date
+# $racePath = Join-Path $RaceDir ("$Prefix" + "_" + "$CurrentDate" + ".txt")
+
+# Output for testing
+Write-Host "racePath: $racePath"
+Write-Host "ApiUrl: $ApiUrl"
+Write-Host "IntervalSeconds: $IntervalSeconds"
+
+# Build racePath: RaceDir + prefix + _ + current date + .txt
+$racePath = Join-Path $RaceDir ("$Prefix" + "_" + "$CurrentDate" + ".txt")
+
+# Check if racePath exists
+if (-not (Test-Path $racePath))
+{
+  Write-Host "Race path '$racePath' does not exist. File is not initialized." -ForegroundColor Red
+  exit
+}
+
+# Assign monitored file
+$FilePath = $racePath
+
 
 # Read Bearer token from file
 if (!(Test-Path $TokenFile))
@@ -73,15 +115,16 @@ while ($true)
 
           try
           {
-            $response = Invoke-RestMethod `
+            Invoke-RestMethod `
               -Uri $ApiUrl `
               -Method POST `
               -Body $payload `
               -ContentType "text/plain" `
               -Headers $headers
 
-
-            $logEntry = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Sent $($lines.Count) lines | Response: $(ConvertTo-Json $response -Depth 5)"
+            #
+            # $logEntry = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Sent $($lines.Count) lines | Response: $(ConvertTo-Json $response -Depth 5)"
+            $logEntry = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Sent $($lines.Count) records"
             Write-Host $logEntry -ForegroundColor Green
             Add-Content $LogFile $logEntry
 

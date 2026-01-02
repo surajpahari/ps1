@@ -1,0 +1,38 @@
+2026-01-02 18:44:13 | Sent 3 lines | Response: {
+  "status": true,
+  "message": "Reading stored successfully",
+  "data": {
+    "device": {
+      "id": 4,
+      "organizer_id": 2,
+      "name": "Phone",
+      "battery": 69,
+      "signal": 4,
+      "status": "ONLINE",
+      "type": "MOBILE_APPLICATION",
+      "last_sync": null,
+      "is_enabled": 1,
+      "created_at": "2025-12-01T12:42:24Z",
+      "updated_at": "2025-12-02T14:22:07Z"
+    },
+    "deviceConnection": {
+      "id": 4,
+      "event_id": 5,
+      "checkpoint_id": 22,
+      "device_id": 4,
+      "created_at": "2025-12-28T16:23:43Z",
+      "updated_at": "2025-12-28T16:23:43Z"
+    },
+    "readings": {
+      "2650": [
+        "2025-12-31 23:39:44.950"
+      ],
+      "2649": [
+        "2025-12-31 23:40:55.938"
+      ]
+    }
+  }
+}
+2026-01-02 18:45:25 | Sent 3 records
+2026-01-02 18:49:07 | Sent 3 records
+2026-01-02 19:05:35 | Sent 3 records
