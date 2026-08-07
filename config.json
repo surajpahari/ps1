@@ -1,0 +1,9 @@
+{
+  "Version": "1.0.0",
+  "RaceDir": "asdf",
+  "ApiUrl": "http://localhost:8000/api/v1/devices",
+  "LoginUrl": "http://localhost:8000/api/v1/device-auth",
+  "IntervalSeconds": 4,
+  "Prefix": "192.168.1.04",
+  "token": "mVg06ExNljV9NAAcsgDjEJYaHfyiTt4Xi4e1gyelbbe541a5"
+}

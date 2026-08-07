@@ -1,0 +1,7 @@
+# Local config — contains sensitive token, never commit
+config.json
+
+# Runtime files
+info/state.txt
+info/log.txt
+info/error.txt

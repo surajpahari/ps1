@@ -1,0 +1,9 @@
+{
+  "Version": "1.0.0",
+  "RaceDir": "Documents/timingfiles",
+  "ApiUrl": "https://admin.racepatro.com/api/v1/devices",
+  "LoginUrl": "https://admin.racepatro.com/api/v1/device-auth",
+  "IntervalSeconds": 5,
+  "Prefix": "192.168.1.01",
+  "token": ""
+}
