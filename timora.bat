@@ -19,6 +19,8 @@ IF "%~1"=="" GOTO HELP
 IF "%~1"=="--check" GOTO CHECK
 IF "%~1"=="--setup" GOTO SETUP
 IF "%~1"=="--clearlog" GOTO CLEARLOG
+IF "%~1"=="--connect" GOTO CONNECT
+IF "%~1"=="--fresh" GOTO FRESH
 
 :HELP
 powershell -NoProfile -ExecutionPolicy Bypass -File "%TIMORA%"
@@ -34,4 +36,12 @@ exit /b %ERRORLEVEL%
 
 :CLEARLOG
 powershell -NoProfile -ExecutionPolicy Bypass -File "%TIMORA%" -clearlog
+exit /b %ERRORLEVEL%
+
+:CONNECT
+powershell -NoProfile -ExecutionPolicy Bypass -File "%TIMORA%" -connect
+exit /b %ERRORLEVEL%
+
+:FRESH
+powershell -NoProfile -ExecutionPolicy Bypass -File "%TIMORA%" -fresh
 exit /b %ERRORLEVEL%
